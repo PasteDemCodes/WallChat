@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/userEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingTop="16dp"
+            android:text="user"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/messageEditText"
+        android:layout_below= "@+id/userEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:textSize="20sp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:hint="type something.."
+        android:lines="5"
+        android:minLines="5"
+        android:gravity="top|left"
+        android:maxLines="5"
+        android:scrollbars="vertical"/>
+
+    <Button
+        android:id="@+id/sendMessageButton"
+        android:layout_below= "@+id/messageEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:text="Send Message" />
+
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sendMessageButton"
+            android:paddingTop="20dp"
+            android:text="Unipi Chatroom"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/chatTextView"
+            android:layout_below= "@+id/label"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/black"
+            android:textSize="18sp"
+            android:paddingTop="25dp"
+            android:lines="15"
+            android:minLines="15"
+            android:gravity="bottom"
+            android:scrollbars="vertical"/>
+
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
